@@ -1,17 +1,32 @@
+.additional-products {
+  padding: 0 20px;
+}
+
 .additional-products__heading {
   font-family: "Oswald", sans-serif;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
+  margin: 0;
+  margin-bottom: 49px;
 }
 
 .additional-products__list {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .additional-products__offer {
+  background-image: url("../../images/bg-cat-house-mobile@2x.png");
+  background-size: 280px 290px;
+  background-position: top center;
+  object-fit: contain;
+}
+
+.additional-products__text {
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
-  background-color: $bg-color-green;
+  margin: 0;
 }

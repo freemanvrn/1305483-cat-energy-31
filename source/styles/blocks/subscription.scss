@@ -1,14 +1,20 @@
+.subscription {
+  padding: 0 20px;
+}
+
 .subscription__heading {
   font-family: "Oswald", sans-serif;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
+  margin: 0;
 }
 
 .subscription__text {
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   line-height: 24px;
+  margin: 0;
 }
 
 .subscription__email {
@@ -17,4 +23,10 @@
   line-height: 20px;
   font-weight: 400;
   color: #444444;
+}
+
+.subscription__button {
+  font-size: 20px;
+  line-height: 26px;
+  padding: 15px 81px;
 }
