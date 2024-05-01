@@ -1,1 +1,12 @@
-//
+.main-footer {
+  padding: 0 20px;
+}
+
+.main-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-footer__title {
+  align-self: center;
+}

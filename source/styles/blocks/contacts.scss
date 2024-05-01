@@ -1,5 +1,7 @@
 .contacts {
   display: flex;
+  justify-content: space-between;
+  padding: 26px 20px;
 }
 
 .contacts__title {
@@ -8,6 +10,7 @@
   line-height: 20px;
   text-transform: uppercase;
   font-weight: 400;
+  max-width: 140px;
 }
 
 .contacts__text {
