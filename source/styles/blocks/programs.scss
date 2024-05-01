@@ -1,9 +1,30 @@
+.programs__wrapper {
+  padding: 0 20px;
+}
+
 .programs__list {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .programs__item {
   background-color: #f2f2f2;
+  margin-bottom: 20px;
+}
+
+.programs__item--loss {
+  background-image: url("../../icons/weight-loss-cat.svg");
+  background-repeat: no-repeat;
+  background-position: 20px 21px;
+  background-size: 36px 50px;
+}
+
+.programs__item--gain {
+  background-image: url("../../icons/weight-gain-cat.svg");
+  background-repeat: no-repeat;
+  background-position: 12px 35px;
+  background-size: 67px 28px;
 }
 
 .programs__title {
@@ -12,12 +33,30 @@
   line-height: 37px;
   text-transform: uppercase;
   font-weight: 400;
+  margin: 0;
+  padding-top: 30px;
+  padding-left: 90px;
 }
 
 .programs__description {
   font-size: 14px;
   line-height: 18px;
   color: #444444;
+  margin: 0;
+  padding-top: 29px;
+  margin-left: 20px;
+  margin-right: 29px;
+  position: relative;
+}
+
+.programs__description::after {
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 100%;
+  background-color: #d9d9d9;
+  top: 140px;
+  left: 0;
 }
 
 .programs__link {
@@ -27,4 +66,8 @@
   text-decoration: none;
   text-transform: uppercase;
   color: inherit;
+  display: block;
+  padding-top: 38px;
+  margin-left: 20px;
+  padding-bottom: 18px;
 }

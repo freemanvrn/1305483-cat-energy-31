@@ -2,22 +2,33 @@
   background-color: #eaeaea;
 }
 
+.example__wrapper {
+  padding: 0 20px;
+}
+
 .example__heading {
   font-family: "Oswald", sans-serif;
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
+  margin: 0;
+  padding-top: 25px;
 }
 
 .example__text {
   font-size: 14px;
   line-height: 18px;
   color: #444444;
+  margin: 0;
+  margin-top: 40px;
+  margin-bottom: 20px;
 }
 
 .example__list {
   list-style-type: none;
   display: flex;
+  justify-content: center;
+  margin: 0;
 }
 
 .example__term {
@@ -32,6 +43,7 @@
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .example__total {
@@ -39,4 +51,6 @@
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
+  margin: 20px 0;
+  text-align: center;
 }

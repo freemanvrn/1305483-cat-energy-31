@@ -1,25 +1,61 @@
 .hero {
   font-family: "Oswald", sans-serif;
   color: #ffffff;
-  background-color: $bg-color-green;
+  background-image:
+    url("../../images/bg-green-cat-mobile@2x.png"),
+    linear-gradient(180deg, #62a53a 302px, transparent 302px);
+  background-repeat: no-repeat;
+  background-size:
+    320px 302px,
+    100% 100%;
+  background-position: center top;
+}
+
+.hero__wrapper {
+  max-width: 400px;
+  margin: 0 auto;
 }
 
 .hero__title {
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
+  margin: 0;
+  padding-top: 27px;
+  text-align: center;
 }
 
 .hero__slogan {
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  margin-top: 25px;
+  margin-bottom: 29px;
+}
+
+.hero img {
+  display: block;
+  margin: 0 auto;
 }
 
 .hero__link {
+  display: block;
+  margin: 0 20px 20px;
+  padding: 10px 63px;
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
   text-transform: uppercase;
   color: inherit;
+  text-align: center;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
