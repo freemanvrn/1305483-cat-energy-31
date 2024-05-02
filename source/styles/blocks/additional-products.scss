@@ -9,6 +9,7 @@
   font-weight: 400;
   margin: 0;
   margin-bottom: 49px;
+  margin-top: 50px;
 }
 
 .additional-products__list {
@@ -18,10 +19,15 @@
 }
 
 .additional-products__offer {
+  width: 280px;
+  height: 290px;
   background-image: url("../../images/bg-cat-house-mobile@2x.png");
   background-size: 280px 290px;
-  background-position: top center;
-  object-fit: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  margin-top: 54px;
+  position: relative;
 }
 
 .additional-products__text {
@@ -29,4 +35,15 @@
   line-height: 20px;
   color: #ffffff;
   margin: 0;
+  text-align: center;
+  padding-top: 187px;
+
+  &::before {
+    background-image: url("../../icons/stack.svg#icon-gift");
+    position: absolute;
+    content: "";
+    background-repeat: no-repeat;
+    background-position: 20px 21px;
+    background-size: 78px 80px;
+  }
 }

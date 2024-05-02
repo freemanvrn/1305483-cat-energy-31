@@ -8,6 +8,7 @@
   line-height: 24px;
   font-weight: 400;
   margin: 0;
+  margin-top: 40px;
 }
 
 .subscription__text {
@@ -15,6 +16,14 @@
   font-size: 16px;
   line-height: 24px;
   margin: 0;
+  text-align: center;
+  margin-top: 32px;
+}
+
+.subscription__form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .subscription__email {
@@ -23,6 +32,11 @@
   line-height: 20px;
   font-weight: 400;
   color: #444444;
+  margin: 24px 0 0;
+  padding: 13px;
+  width: 100%;
+  border: 1px solid #cdcdcd;
+  outline: none;
 }
 
 .subscription__button {
