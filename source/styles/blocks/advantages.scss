@@ -27,8 +27,65 @@
   color: #444444;
   padding-left: 80px;
   margin-bottom: 24px;
+  position: relative;
 }
 
 .advantages__item:last-child {
   margin-bottom: 0;
+}
+
+.advantages__item::before {
+  position: absolute;
+  content: "";
+  display: block;
+  background-color: #68b738;
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+  top: -2px;
+  left: 0;
+}
+
+.advantages__item--utility::after {
+  position: absolute;
+  content: "";
+  background-image: url("../../icons/stack.svg#icon-leaf");
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 28px;
+  top: 14px;
+  left: 19px;
+}
+
+.advantages__item--powder::after {
+  position: absolute;
+  content: "";
+  background-image: url("../../icons/stack.svg#icon-powder");
+  background-repeat: no-repeat;
+  width: 27px;
+  height: 29px;
+  top: 14px;
+  left: 17px;
+}
+
+.advantages__item--meal::after {
+  position: absolute;
+  content: "";
+  background-image: url("../../icons/stack.svg#icon-eat");
+  background-repeat: no-repeat;
+  width: 26px;
+  height: 30px;
+  top: 13px;
+  left: 17px;
+}
+
+.advantages__item--month::after {
+  position: absolute;
+  content: "";
+  background-image: url("../../icons/stack.svg#icon-alarm");
+  background-repeat: no-repeat;
+  width: 27px;
+  height: 31px;
+  top: 13px;
+  left: 17px;
 }
