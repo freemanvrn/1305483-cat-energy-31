@@ -20,6 +20,7 @@
   width: 50%;
   height: 256px;
   overflow: hidden;
+  background-color: #eaeaea;
 }
 
 .slider__divider {
@@ -59,10 +60,30 @@
   border: 2px solid #666666;
 }
 
+.slider__button::after {
+  position: absolute;
+  content: "";
+  mask-image: url("../../icons/stack.svg#slider-arrow");
+  mask-repeat: no-repeat;
+  background-color: #666666;
+  width: 24px;
+  height: 18px;
+  left: 8px;
+  top: 10px;
+}
+
 .slider__button:hover {
   border: 2px solid #68b738;
 }
 
 .slider__button:active {
   border-color: rgba(94, 170, 47, 0.6);
+}
+
+.slider__button:hover::after {
+  background-color: #68b738;
+}
+
+.slider__button:active::after {
+  background-color: rgba(94, 170, 47, 0.6);
 }
