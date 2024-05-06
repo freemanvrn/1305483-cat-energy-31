@@ -1,3 +1,8 @@
+.additional-card {
+  border-bottom: 1px solid #ebebeb;
+  padding-bottom: 19px;
+}
+
 .additional-card__heading {
   font-family: $oswald-font;
   font-size: 16px;
@@ -5,8 +10,12 @@
   text-transform: uppercase;
   font-weight: 400;
   margin: 0;
-  margin-top: 31px;
   margin-bottom: 13px;
+}
+
+.additional-card__heading:first-child {
+  border-top: 1px solid #ebebeb;
+  padding-top: 13px;
 }
 
 .additional-card__list {

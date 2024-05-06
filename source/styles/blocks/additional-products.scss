@@ -4,6 +4,8 @@
 
 .additional-products__heading-wrapper {
   overflow: hidden;
+  margin-right: -20px;
+  padding-right: 20px;
 }
 
 .additional-products__heading {
@@ -14,8 +16,8 @@
   line-height: 24px;
   font-weight: 400;
   margin: 0;
-  margin-bottom: 18px;
-  margin-top: 50px;
+  margin-bottom: 36px;
+  margin-top: 25px;
 }
 
 .additional-products__heading-wrapper::after {
@@ -28,6 +30,7 @@
   position: relative;
   margin-right: -100%;
   right: -40px;
+  top: -4px;
 }
 
 .additional-products__list {
@@ -45,7 +48,7 @@
   background-repeat: no-repeat;
   background-color: #62a53a;
   margin: 0 auto;
-  margin-top: 54px;
+  margin-top: 35px;
 }
 
 .additional-products__text {

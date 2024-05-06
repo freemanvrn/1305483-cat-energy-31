@@ -5,12 +5,14 @@
 .main-products__list {
   display: flex;
   flex-direction: column;
-  gap: 25px;
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
 .main-products__item {
-  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+  margin-left: -20px;
+  margin-right: -20px;
+  padding: 0 20px 25px;
 }
