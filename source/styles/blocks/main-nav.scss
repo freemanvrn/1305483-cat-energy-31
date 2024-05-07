@@ -5,6 +5,10 @@
   border: none;
   background-color: transparent;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .main-nav__toggle-line,
@@ -37,6 +41,13 @@
   margin: 0;
   padding: 0;
   display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 33px;
+    justify-content: space-between;
+  }
 }
 
 .main-nav__link {
@@ -46,4 +57,9 @@
   text-transform: uppercase;
   text-decoration: none;
   color: inherit;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+  }
 }

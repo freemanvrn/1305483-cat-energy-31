@@ -1,4 +1,8 @@
 .container {
   max-width: 400px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    max-width: 800px;
+  }
 }

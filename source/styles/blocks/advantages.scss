@@ -1,9 +1,18 @@
 .advantages {
   margin-bottom: 49px;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px solid #ebebeb;
+    margin-bottom: 45px;
+  }
 }
 
 .advantages__wrapper {
   padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
 }
 
 .advantages__heading {
@@ -13,12 +22,24 @@
   font-weight: 400;
   margin: 0;
   margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-top: 45px;
+    margin-bottom: 42px;
+  }
 }
 
 .advantages__list {
   list-style-type: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .advantages__item {
@@ -28,10 +49,25 @@
   padding-left: 80px;
   margin-bottom: 24px;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    padding-left: 0;
+    width: 245px;
+    margin-top: 30px;
+    margin-bottom: 104px;
+  }
 }
 
 .advantages__item:last-child {
   margin-bottom: 0;
+  width: 360px;
+
+  @media (min-width: $tablet-width) {
+    width: 245px;
+    margin-bottom: 104px;
+  }
 }
 
 .advantages__item::before {
@@ -44,6 +80,13 @@
   height: 60px;
   top: -2px;
   left: 0;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 31px;
+  }
 }
 
 .advantages__item--utility::after {
@@ -55,6 +98,13 @@
   height: 28px;
   top: 14px;
   left: 19px;
+
+  @media (min-width: $tablet-width) {
+    width: 30px;
+    height: 32px;
+    top: 25px;
+    left: 26px;
+  }
 }
 
 .advantages__item--powder::after {
@@ -66,6 +116,13 @@
   height: 29px;
   top: 14px;
   left: 17px;
+
+  @media (min-width: $tablet-width) {
+    width: 26px;
+    height: 29px;
+    top: 25px;
+    left: 28px;
+  }
 }
 
 .advantages__item--meal::after {
@@ -77,6 +134,13 @@
   height: 30px;
   top: 13px;
   left: 17px;
+
+  @media (min-width: $tablet-width) {
+    width: 25px;
+    height: 30px;
+    top: 25px;
+    left: 27px;
+  }
 }
 
 .advantages__item--month::after {
@@ -84,8 +148,15 @@
   content: "";
   background-image: url("../../icons/stack.svg#icon-alarm");
   background-repeat: no-repeat;
-  width: 27px;
+  width: 26px;
   height: 31px;
   top: 13px;
   left: 17px;
+
+  @media (min-width: $tablet-width) {
+    width: 30px;
+    height: 32px;
+    top: 25px;
+    left: 26px;
+  }
 }

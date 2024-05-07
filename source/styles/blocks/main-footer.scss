@@ -1,11 +1,21 @@
 .main-footer {
   padding: 40px 0 0;
   background-color: #f2f2f2;
+
+  @media (min-width: $tablet-width) {
+    padding: 55px 30px;
+  }
 }
 
 .main-footer__wrapper {
   display: flex;
   flex-flow: column wrap;
+
+  @media (min-width: $tablet-width) {
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .main-footer__title {
@@ -22,4 +32,8 @@
 
 .main-footer__copyright {
   margin-top: 80px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+  }
 }
