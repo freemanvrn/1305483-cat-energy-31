@@ -36,6 +36,8 @@
   margin: 0;
   padding: 0;
 
+  counter-reset: advantages;
+
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -62,7 +64,6 @@
 
 .advantages__item:last-child {
   margin-bottom: 0;
-  width: 360px;
 
   @media (min-width: $tablet-width) {
     width: 245px;
@@ -76,6 +77,7 @@
   display: block;
   background-color: #68b738;
   background-repeat: no-repeat;
+  background-position: center;
   width: 60px;
   height: 60px;
   top: -2px;
@@ -89,74 +91,56 @@
   }
 }
 
-.advantages__item--utility::after {
-  position: absolute;
-  content: "";
+.advantages__item::after {
+  @media (min-width: $tablet-width) {
+    counter-increment: advantages;
+    content: counter(advantages);
+    position: absolute;
+    top: 89px;
+    left: 117px;
+    z-index: -1;
+    font-family: $oswald-font;
+    font-size: 280px;
+    color: #f2f2f2;
+  }
+}
+
+.advantages__item--utility::before {
   background-image: url("../../icons/stack.svg#icon-leaf");
   background-repeat: no-repeat;
-  width: 25px;
-  height: 28px;
-  top: 14px;
-  left: 19px;
+  background-size: 25px 28px;
 
   @media (min-width: $tablet-width) {
-    width: 30px;
-    height: 32px;
-    top: 25px;
-    left: 26px;
+    background-size: 30px 32px;
   }
 }
 
-.advantages__item--powder::after {
-  position: absolute;
-  content: "";
+.advantages__item--powder::before {
   background-image: url("../../icons/stack.svg#icon-powder");
   background-repeat: no-repeat;
-  width: 27px;
-  height: 29px;
-  top: 14px;
-  left: 17px;
+  background-size: 27px 29px;
 
   @media (min-width: $tablet-width) {
-    width: 26px;
-    height: 29px;
-    top: 25px;
-    left: 28px;
+    background-size: 26px 29px;
   }
 }
 
-.advantages__item--meal::after {
-  position: absolute;
-  content: "";
+.advantages__item--meal::before {
   background-image: url("../../icons/stack.svg#icon-eat");
   background-repeat: no-repeat;
-  width: 26px;
-  height: 30px;
-  top: 13px;
-  left: 17px;
+  background-size: 26px 33px;
 
   @media (min-width: $tablet-width) {
-    width: 25px;
-    height: 30px;
-    top: 25px;
-    left: 27px;
+    background-size: 25px 30px;
   }
 }
 
-.advantages__item--month::after {
-  position: absolute;
-  content: "";
+.advantages__item--month::before {
   background-image: url("../../icons/stack.svg#icon-alarm");
   background-repeat: no-repeat;
-  width: 26px;
-  height: 31px;
-  top: 13px;
-  left: 17px;
+  background-size: 26px 31px;
 
   @media (min-width: $tablet-width) {
-    width: 30px;
-    height: 32px;
-    top: 25px;
-    left: 26px;
+    background-size: 30px 32px;
   }
 }

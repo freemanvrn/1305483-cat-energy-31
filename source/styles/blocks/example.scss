@@ -46,8 +46,10 @@
 }
 
 .example__list-wrapper {
-  display: flex;
-  justify-content: space-between;
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .example__list {
