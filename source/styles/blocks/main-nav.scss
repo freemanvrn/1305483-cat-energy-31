@@ -47,7 +47,19 @@
     flex-wrap: wrap;
     gap: 33px;
     justify-content: space-between;
+    align-items: center;
   }
+}
+
+.main-nav__item {
+  padding-top: 10px;
+  padding-bottom: 11px;
+}
+
+.main-nav__item--current {
+  display: block;
+  padding-bottom: 9px;
+  border-bottom: 2px solid $bg-color-green;
 }
 
 .main-nav__link {
