@@ -30,6 +30,9 @@
   transform: translate(-50%, -50%);
   width: 40px;
   height: 40px;
+  border-radius: 50%;
+  border: 2px solid #666666;
+  background-color: #ffffff;
 }
 
 .slider__divider::before {
@@ -45,22 +48,7 @@
   background-color: #666666;
 }
 
-.slider__divider:hover::before {
-  background-color: $bg-color-green;
-}
-
-.slider__divider:active::before {
-  background-color: rgba(94, 170, 47, 0.6);
-}
-
-.slider__button {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: 2px solid #666666;
-}
-
-.slider__button::after {
+.slider__divider::after {
   position: absolute;
   content: "";
   mask-image: url("../../icons/stack.svg#slider-arrow");
@@ -68,22 +56,24 @@
   background-color: #666666;
   width: 24px;
   height: 18px;
-  left: 8px;
-  top: 10px;
+  left: 6px;
+  top: 8px;
 }
 
-.slider__button:hover {
-  border: 2px solid #68b738;
+.slider__divider:hover {
+  border-color: $bg-color-green;
 }
 
-.slider__button:active {
+.slider__divider:active {
   border-color: rgba(94, 170, 47, 0.6);
 }
 
-.slider__button:hover::after {
-  background-color: #68b738;
+.slider__divider:hover::before,
+.slider__divider:hover::after {
+  background-color: $bg-color-green;
 }
 
-.slider__button:active::after {
+.slider__divider:active::before,
+.slider__divider:active::after {
   background-color: rgba(94, 170, 47, 0.6);
 }
