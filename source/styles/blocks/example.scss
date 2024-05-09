@@ -139,13 +139,12 @@
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
-  margin: 20px 0;
+  margin: 34px 0 20px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
-
     font-size: 20px;
     line-height: 20px;
     width: 180px;
@@ -156,6 +155,8 @@
 }
 
 .example__total span {
-  display: block;
-  padding-top: 9px;
+  @media (min-width: $tablet-width) {
+    display: block;
+    padding-top: 9px;
+  }
 }
