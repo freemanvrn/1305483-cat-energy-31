@@ -87,6 +87,17 @@
   background-color: #62a53a;
   margin: 0 auto;
   margin-top: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 70px;
+    background-image: url("../../images/bg-cat-house-tablet@2x.png");
+    background-size: contain;
+    background-position: center top;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+  }
 }
 
 .additional-products__text {
@@ -98,6 +109,12 @@
   padding-top: 187px;
   padding-bottom: 43px;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding: 71px 125px 69px 0;
+    text-align: left;
+    position: static;
+  }
 }
 
 .additional-products__text::before {
@@ -110,4 +127,21 @@
   top: 58px;
   left: 50%;
   margin-left: -39px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.additional-products__offer::before {
+  @media (min-width: $tablet-width) {
+    background-image: url("../../icons/stack.svg#icon-gift");
+    position: absolute;
+    content: "";
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 82px;
+    top: 56px;
+    left: 79px;
+  }
 }

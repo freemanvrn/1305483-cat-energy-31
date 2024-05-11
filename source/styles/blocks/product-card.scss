@@ -17,17 +17,23 @@
   place-self: center center;
 
   @media (min-width: $tablet-width) {
-    display: block;
-    min-height: 242px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 210px;
     align-self: center;
     order: -1;
     margin-top: -105px;
+    margin-bottom: 22px;
   }
 }
 
 .product-card__img-link img {
   @media (min-width: $tablet-width) {
-    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
   }
 }
 
@@ -136,7 +142,7 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    margin-top: 133px;
+    margin-top: 123px;
   }
 }
 

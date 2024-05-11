@@ -5,6 +5,10 @@
   @media (min-width: $tablet-width) {
     padding: 55px 30px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 66px 110px;
+  }
 }
 
 .main-footer__wrapper {
@@ -22,11 +26,11 @@
   align-self: center;
 }
 
-.main-footer__title:hover picture {
+.main-footer__title:hover img {
   fill: #3e3e3e;
 }
 
-.main-footer__title:active picture {
+.main-footer__title:active img {
   fill: #6b6b6b;
 }
 

@@ -1,6 +1,15 @@
 .additional-card {
-  border-bottom: 1px solid #ebebeb;
+  border-bottom: 1px solid #cdcdcd;
+  padding-top: 13px;
   padding-bottom: 19px;
+
+  @media (min-width: $tablet-width) {
+    border: 1px solid #cdcdcd;
+    border-top: none;
+    padding: 26px 38px 28px;
+    display: grid;
+    grid-template-columns: 1fr 263px;
+  }
 }
 
 .additional-card__heading {
@@ -11,11 +20,21 @@
   font-weight: 400;
   margin: 0;
   margin-bottom: 13px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
-.additional-card__heading:first-child {
-  border-top: 1px solid #ebebeb;
+.additional-card--first {
+  border-top: 1px solid #cdcdcd;
   padding-top: 13px;
+
+  @media (min-width: $tablet-width) {
+    border-top: 1px solid #cdcdcd;
+    padding-top: 26px;
+  }
 }
 
 .additional-card__list {
@@ -26,16 +45,31 @@
   flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 91px;
+  }
 }
 
 .additional-card__item {
   font-size: 14px;
   line-height: 14px;
   color: #444444;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+  }
 }
 
 .additional-card__button {
   width: 100%;
   padding: 10px 15px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1/-1;
+  }
 }

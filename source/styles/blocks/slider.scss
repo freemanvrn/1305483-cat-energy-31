@@ -8,6 +8,12 @@
     padding-top: 99px;
     padding-bottom: 101px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+    margin: 0;
+    padding-bottom: 85px;
+  }
 }
 
 .slider__wrapper {
@@ -40,6 +46,16 @@
     background-size:
       100% 100%,
       100% 356px;
+    background-position: left top;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 598px;
+    background-image: linear-gradient(180deg, #ffffff 138px, #eaeaea 138px);
+    background-repeat: no-repeat;
+    background-size:
+      100% 100%,
+      100% 460px;
     background-position: left top;
   }
 }

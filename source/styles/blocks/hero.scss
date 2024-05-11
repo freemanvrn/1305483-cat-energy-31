@@ -25,6 +25,11 @@
     max-width: 800px;
     position: relative;
   }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1500px;
+    position: relative;
+  }
 }
 
 .hero__title {
@@ -42,6 +47,11 @@
     text-align: left;
     padding-left: 120px;
     max-width: 545px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 190px;
+    max-width: 610px;
   }
 }
 
@@ -62,6 +72,11 @@
     margin-top: 40px;
     margin-bottom: 50px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 190px;
+    margin-bottom: 52px;
+  }
 }
 
 .hero img {
@@ -75,6 +90,15 @@
     z-index: -1;
     top: 201px;
     left: 31px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    width: 552px;
+    height: 499px;
+    z-index: -1;
+    top: -80px;
+    left: 591px;
   }
 }
 
@@ -106,5 +130,10 @@
     margin: 0;
     margin-left: 120px;
     margin-bottom: 526px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 190px;
+    margin-bottom: 266px;
   }
 }

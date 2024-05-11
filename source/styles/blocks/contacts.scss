@@ -30,13 +30,20 @@
   font-style: normal;
 
   @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
     font-size: 16px;
     line-height: 20px;
     text-align: right;
+    justify-content: space-between;
   }
 }
 
 .contacts--catalog {
   background-color: #f2f2f2;
   margin-top: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 80px;
+  }
 }

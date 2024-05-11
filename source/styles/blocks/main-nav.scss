@@ -82,12 +82,5 @@
 }
 
 .main-nav__link:active {
-  color: #000000;
-  display: block;
-  padding-bottom: 9px;
-  border-bottom: 2px solid $bg-color-green;
-}
-
-.main-nav__link:disabled {
   color: rgba(0, 0, 0, 0.3);
 }
