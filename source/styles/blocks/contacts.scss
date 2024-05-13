@@ -7,6 +7,10 @@
   @media (min-width: $tablet-width) {
     padding: 60px 70px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 60px 78px 60px 80px;
+  }
 }
 
 .contacts__title {
@@ -37,6 +41,14 @@
     text-align: right;
     justify-content: space-between;
   }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
+}
+
+.contacts__text span {
+  display: block;
 }
 
 .contacts--catalog {

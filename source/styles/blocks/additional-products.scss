@@ -4,6 +4,10 @@
   @media (min-width: $tablet-width) {
     padding: 0 30px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+  }
 }
 
 .additional-products__heading-wrapper {
@@ -16,6 +20,13 @@
     margin-right: -30px;
     padding-left: 30px;
     padding-right: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: -110px;
+    margin-right: -110px;
+    padding-left: 110px;
+    padding-right: 110px;
   }
 }
 

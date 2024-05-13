@@ -50,6 +50,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 36px;
     padding-left: 190px;
     max-width: 610px;
   }
@@ -97,7 +98,7 @@
     width: 552px;
     height: 499px;
     z-index: -1;
-    top: -80px;
+    top: -44px;
     left: 591px;
   }
 }
