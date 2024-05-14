@@ -1,6 +1,6 @@
 .main-header {
   margin: 0;
-  padding: 13px 21px 14px 20px;
+  padding: 13px 21px 12px 20px;
   border-bottom: 1px solid #ebebeb;
   margin-left: -20px;
   margin-right: -20px;
@@ -16,13 +16,20 @@
 }
 
 .main-header__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.main-header__inner {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
   align-items: center;
 
-  @media (min-width: $tablet-width) {
-    flex-wrap: nowrap;
+  @media (max-width: $mobile-width-only) {
+    justify-content: space-between;
   }
 }
 
@@ -44,6 +51,8 @@
 
 
 .main-header__title {
+  margin-right: 90px;
+
   &:hover {
     opacity: 0.8;
   }

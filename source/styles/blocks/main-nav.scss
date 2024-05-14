@@ -1,46 +1,76 @@
+.main-nav {
+  position: relative;
+}
+
 .main-nav__toggle {
+  display: block;
   width: 24px;
   height: 24px;
   cursor: pointer;
   border: none;
   background-color: transparent;
-  position: relative;
+  position: absolute;
+  z-index: 2;
+  top: -30px;
+  right: 0;
 
   @media (min-width: $tablet-width) {
     display: none;
   }
 }
 
-.main-nav__toggle-line,
-.main-nav__toggle::before,
-.main-nav__toggle::after {
+.main-nav--closed .main-nav__toggle::before {
   content: "";
   position: absolute;
+  top: 0;
+  right: 0;
+  width: 24px;
   height: 2px;
-  width: 100%;
   background-color: #000000;
+  box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
 }
 
-.main-nav__toggle::before {
-  top: 1px;
-  left: 0;
+.main-nav--closed .main-nav__toggle:active::before {
+  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow:
+    0 8px 0 0 rgba(0, 0, 0, 0.3),
+    0 16px 0 0 rgba(0, 0, 0, 0.3);
 }
 
-.main-nav__toggle::after {
-  top: 8px;
-  left: 0;
-}
+.main-nav--opened .main-nav__toggle {
+  top: 0;
+  right: 0;
 
-.main-nav__toggle-line {
-  top: 16px;
-  left: 0;
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 24px;
+    height: 2px;
+    background-color: #000000;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
 }
 
 .main-nav__list {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  display: none;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -55,6 +85,11 @@
 .main-nav__item {
   padding-top: 10px;
   padding-bottom: 11px;
+
+  @media (max-width: $mobile-width-only) {
+    padding-top: 10px;
+    padding-bottom: 11px;
+  }
 }
 
 .main-nav__item--current {
@@ -70,6 +105,10 @@
   text-transform: uppercase;
   text-decoration: none;
   color: inherit;
+
+  @media (max-width: $mobile-width-only) {
+    text-align: center;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
