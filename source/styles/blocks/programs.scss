@@ -194,10 +194,10 @@
   text-transform: uppercase;
   color: inherit;
   display: block;
-  padding-top: 38px;
+  padding-top: 43px;
   margin-left: 20px;
   margin-right: 20px;
-  padding-bottom: 18px;
+  padding-bottom: 21px;
   position: relative;
 
   @media (min-width: $tablet-width) {
@@ -219,7 +219,7 @@
   height: 1px;
   width: 100%;
   background-color: #d9d9d9;
-  top: 19px;
+  top: 22px;
   left: 0;
 
   @media (min-width: $tablet-width) {
@@ -235,8 +235,21 @@
   background-color: #000000;
   width: 24px;
   height: 12px;
+}
+
+.programs__link-loss::after {
+  left: 102px;
+  top: 43px;
+
+  @media (min-width: $tablet-width) {
+    left: 128px;
+    top: 4px;
+  }
+}
+
+.programs__link-gain::after {
   left: 98px;
-  top: 40px;
+  top: 43px;
 
   @media (min-width: $tablet-width) {
     left: 128px;
@@ -252,8 +265,21 @@
   background-color: #000000;
   width: 32px;
   height: 12px;
+}
+
+.programs__link-loss:hover::after {
+  left: 102px;
+  top: 43px;
+
+  @media (min-width: $tablet-width) {
+    left: 128px;
+    top: 4px;
+  }
+}
+
+.programs__link-gain:hover::after {
   left: 98px;
-  top: 40px;
+  top: 43px;
 
   @media (min-width: $tablet-width) {
     left: 128px;
@@ -269,8 +295,21 @@
   background-color: #b3b3b3;
   width: 32px;
   height: 12px;
+}
+
+.programs__link-loss:active::after {
+  left: 102px;
+  top: 43px;
+
+  @media (min-width: $tablet-width) {
+    left: 128px;
+    top: 4px;
+  }
+}
+
+.programs__link-gain:active::after {
   left: 98px;
-  top: 40px;
+  top: 43px;
 
   @media (min-width: $tablet-width) {
     left: 128px;
