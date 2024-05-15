@@ -33,7 +33,7 @@
           </picture>
         </a>
       </div>
-      <nav class="main-nav main-nav--closed main-nav--nojs">
+      <nav class="main-nav main-nav--closed">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -376,72 +376,74 @@
           Дополнительные товары
         </h2>
       </div>
-      <div class="additional-products__wrapper">
-        <ul class="additional-products__list">
-          <li class="additional-products__item">
-            <article class="additional-products__card additional-card additional-card--first">
-              <h3 class="additional-card__heading">Сахарозаменитель</h3>
-              <ul class="additional-card__list">
-                <li class="additional-card__item">
-                  1 упаковка (100 г)
-                </li>
-                <li class="additional-card__item">
-                  200 ₽
-                </li>
-              </ul>
-              <button class="additional-card__button button button--primary" type="button">Заказать</button>
-            </article>
-          </li>
-          <li class="additional-products__item">
-            <article class="additional-products__card additional-card">
-              <h3 class="additional-card__heading">Питьевая вода</h3>
-              <ul class="additional-card__list">
-                <li class="additional-card__item">
-                  5 литров
-                </li>
-                <li class="additional-card__item">
-                  50 ₽
-                </li>
-              </ul>
-              <button class="additional-card__button button button--primary" type="button">Заказать</button>
-            </article>
-          </li>
-          <li class="additional-products__item">
-            <article class="additional-products__card additional-card">
-              <h3 class="additional-card__heading">Молоко</h3>
-              <ul class="additional-card__list">
-                <li class="additional-card__item">
-                  1 литр
-                </li>
-                <li class="additional-card__item">
-                  100 ₽
-                </li>
-              </ul>
-              <button class="additional-card__button button button--primary" type="button">Заказать</button>
-            </article>
-          </li>
-          <li class="additional-products__item">
-            <article class="additional-products__card additional-card">
-              <h3 class="additional-card__heading">Витамины</h3>
-              <ul class="additional-card__list">
-                <li class="additional-card__item">
-                  1 упаковка (30 г)
-                </li>
-                <li class="additional-card__item">
-                  300 ₽
-                </li>
-              </ul>
-              <button class="additional-card__button button button--primary" type="button">Заказать</button>
-            </article>
-          </li>
-        </ul>
-      </div>
-      <div class="additional-products__offer">
-        <p class="additional-products__text">
-          Закажите все<br>
-          и получите чехол для<br>
-          кота в подарок!
-        </p>
+      <div class="additional-products__inner">
+        <div class="additional-products__wrapper">
+          <ul class="additional-products__list">
+            <li class="additional-products__item">
+              <article class="additional-products__card additional-card additional-card--first">
+                <h3 class="additional-card__heading">Сахарозаменитель</h3>
+                <ul class="additional-card__list">
+                  <li class="additional-card__item additional-card__item--measure">
+                    1 упаковка (100 г)
+                  </li>
+                  <li class="additional-card__item additional-card__item--price">
+                    200 ₽
+                  </li>
+                </ul>
+                <button class="additional-card__button button button--primary" type="button">Заказать</button>
+              </article>
+            </li>
+            <li class="additional-products__item">
+              <article class="additional-products__card additional-card">
+                <h3 class="additional-card__heading">Питьевая вода</h3>
+                <ul class="additional-card__list">
+                  <li class="additional-card__item additional-card__item--measure">
+                    5 литров
+                  </li>
+                  <li class="additional-card__item additional-card__item--price">
+                    50 ₽
+                  </li>
+                </ul>
+                <button class="additional-card__button button button--primary" type="button">Заказать</button>
+              </article>
+            </li>
+            <li class="additional-products__item">
+              <article class="additional-products__card additional-card">
+                <h3 class="additional-card__heading">Молоко</h3>
+                <ul class="additional-card__list">
+                  <li class="additional-card__item additional-card__item--measure">
+                    1 литр
+                  </li>
+                  <li class="additional-card__item additional-card__item--price">
+                    100 ₽
+                  </li>
+                </ul>
+                <button class="additional-card__button button button--primary" type="button">Заказать</button>
+              </article>
+            </li>
+            <li class="additional-products__item">
+              <article class="additional-products__card additional-card">
+                <h3 class="additional-card__heading">Витамины</h3>
+                <ul class="additional-card__list">
+                  <li class="additional-card__item additional-card__item--measure">
+                    1 упаковка (30 г)
+                  </li>
+                  <li class="additional-card__item additional-card__item--price">
+                    300 ₽
+                  </li>
+                </ul>
+                <button class="additional-card__button button button--primary" type="button">Заказать</button>
+              </article>
+            </li>
+          </ul>
+        </div>
+        <div class="additional-products__offer">
+          <p class="additional-products__text">
+            Закажите все<br>
+            и получите чехол для<br>
+            кота в подарок!
+          </p>
+        </div>
       </div>
     </section>
 
@@ -463,7 +465,7 @@
 
     <section class="location">
       <h2 class="visually-hidden">Наш адрес на карте</h2>
-      <div class="location__contacts contacts contacts--catalog">
+      <div class="location__contacts location__contacts--catalog contacts">
         <b class="contacts__title">
           Приглашаем<br>к сотрудничеству дилеров!
         </b>
