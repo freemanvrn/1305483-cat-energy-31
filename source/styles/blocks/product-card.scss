@@ -1,7 +1,7 @@
 .product-card {
   display: grid;
   grid-template-columns: 50% 27% 23%;
-  padding-top: 20px;
+  padding-top: 21px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -158,7 +158,7 @@
     background-color: #ffffff;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     padding: 40px 35px;
     border: 2px solid #f2f2f2;
     background-color: #ffffff;
@@ -168,7 +168,7 @@
 .product-card__heading-link--more {
   grid-column: 1/2;
   justify-self: center;
-  margin-top: 78px;
+  margin-top: 56px;
   position: relative;
 
   @media (min-width: $tablet-width) {
@@ -195,13 +195,23 @@
 
 .product-card__heading--more::before {
   rotate: 90deg;
-  bottom: 120px;
-  left: 42px;
+  bottom: 58px;
+  left: 86px;
+
+  @media (min-width: $tablet-width) {
+    bottom: 120px;
+    left: 42px;
+  }
 }
 
 .product-card__heading--more::after {
-  bottom: 119px;
-  left: 42px;
+  bottom: 58px;
+  left: 86px;
+
+  @media (min-width: $tablet-width) {
+    bottom: 119px;
+    left: 42px;
+  }
 }
 
 .product-card__text {
