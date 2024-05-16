@@ -12,6 +12,11 @@
 }
 
 .location__contacts {
+  @media (min-width: $tablet-width) {
+    padding-top: 62px;
+    padding-bottom: 62px;
+  }
+
   @media (min-width: $desktop-width) {
     width: 565px;
     height: 199px;
