@@ -17,10 +17,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    height: 506px;
-    background-image:
-      url("../../images/cat-bg-desktop-index@2x.png"),
-      linear-gradient(to right, transparent 50%, #62a53a 50%);
+    height: 519px;
+    background-image: linear-gradient(to right, transparent 50%, #62a53a 50%);
+    background-size: 100% 100%;
     background-repeat: no-repeat;
   }
 }
@@ -37,6 +36,7 @@
   @media (min-width: $desktop-width) {
     max-width: 1500px;
     position: relative;
+    z-index: 10;
   }
 }
 

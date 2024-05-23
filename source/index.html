@@ -13,9 +13,9 @@
   <script src="scripts/index.js" defer></script>
 </head>
 
-<body class="page__body">
-  <header class="main-header container">
-    <div class="main-header__wrapper">
+<body class="page__body page__body--index">
+  <header class="main-header main-header--index">
+    <div class="main-header__wrapper container">
       <div class="main-header__inner">
         <a class="main-header__logo" href="#">
           <picture>
@@ -38,18 +38,18 @@
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--current">
-              <a class="main-nav__link" href="#">
+            <li class="main-nav__item main-nav__item--index main-nav__item--current">
+              <a class="main-nav__link main-nav__link--index" href="#">
                 Главная
               </a>
             </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="catalog.html">
+            <li class="main-nav__item main-nav__item--index">
+              <a class="main-nav__link main-nav__link--index" href="catalog.html">
                 Каталог продукции
               </a>
             </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">
+            <li class="main-nav__item main-nav__item--index">
+              <a class="main-nav__link main-nav__link--index" href="#">
                 Подбор программы
               </a>
             </li>
@@ -81,7 +81,7 @@
       </div>
     </section>
 
-    <section class="programs">
+    <section class="programs container">
       <div class="programs__wrapper">
         <h2 class="visually-hidden">
           Подбор программы для кота
@@ -113,7 +113,7 @@
       </div>
     </section>
 
-    <section class="advantages">
+    <section class="advantages container">
       <div class="advantages__wrapper">
         <h2 class="advantages__heading">
           Как это работает

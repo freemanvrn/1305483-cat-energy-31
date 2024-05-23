@@ -4,9 +4,11 @@
 
   @media (min-width: $tablet-width) {
     max-width: 800px;
+    margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 1440px;
+    max-width: 1600px;
+    margin: 0 auto;
   }
 }
