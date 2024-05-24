@@ -92,6 +92,7 @@
   display: flex;
 
   @media (max-width: $mobile-width-only) {
+    width: 100%;
     min-width: 280px;
     position: absolute;
     z-index: 10;
