@@ -51,6 +51,10 @@
     border-top: 1px solid #cdcdcd;
     padding-top: 26px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 15px;
+  }
 }
 
 .additional-card__list {
@@ -68,9 +72,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
+    display: grid;
+    grid-template-columns: 75% 25%;
+    align-items: center;
     margin-bottom: 0;
-    min-width: 285px;
+    min-width: 325px;
     margin-right: auto;
   }
 }
@@ -90,6 +96,7 @@
 .additional-card__item--measure {
   @media (min-width: $desktop-width) {
     margin-right: 112px;
+    text-align: left;
   }
 }
 

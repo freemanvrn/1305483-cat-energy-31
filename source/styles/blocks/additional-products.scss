@@ -159,7 +159,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 185px 42px 43px;
+    padding: 185px 41px 43px;
     text-align: center;
     position: relative;
   }
@@ -179,18 +179,6 @@
   @media (min-width: $tablet-width) {
     display: none;
   }
-
-  @media (min-width: $desktop-width) {
-    background-image: url("../../icons/stack.svg#icon-gift");
-    position: absolute;
-    content: "";
-    background-repeat: no-repeat;
-    width: 78px;
-    height: 80px;
-    top: 58px;
-    left: 50%;
-    margin-left: -39px;
-  }
 }
 
 .additional-products__offer::before {
@@ -206,6 +194,14 @@
   }
 
   @media (min-width: $desktop-width) {
-    display: none;
+    background-image: url("../../icons/stack.svg#icon-gift");
+    position: absolute;
+    content: "";
+    background-repeat: no-repeat;
+    width: 78px;
+    height: 80px;
+    top: 58px;
+    left: 50%;
+    margin-left: -39px;
   }
 }
