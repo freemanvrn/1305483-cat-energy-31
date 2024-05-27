@@ -1,3 +1,9 @@
+.location {
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
+}
+
 .location__map iframe {
   border: none;
   display: block;
@@ -26,7 +32,7 @@
     position: absolute;
     background-color: #ffffff;
     left: 110px;
-    top: 2355px;
+    top: 95px;
   }
 }
 
@@ -39,6 +45,6 @@
 
   @media (min-width: $desktop-width) {
     background-color: #ffffff;
-    top: 2414px;
+    top: 95px;
   }
 }

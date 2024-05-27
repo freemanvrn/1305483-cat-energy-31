@@ -17,7 +17,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    height: 519px;
+    height: 510px;
     background-image: linear-gradient(to right, transparent 50%, #62a53a 50%);
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -58,7 +58,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 36px;
+    padding-top: 44px;
     padding-left: 190px;
     max-width: 610px;
   }
@@ -84,6 +84,7 @@
 
   @media (min-width: $desktop-width) {
     padding-left: 190px;
+    margin-top: 38px;
     margin-bottom: 52px;
   }
 }
@@ -106,7 +107,7 @@
     width: 552px;
     height: 499px;
     z-index: -1;
-    top: -48px;
+    top: -39px;
     left: 558px;
   }
 }
