@@ -20,12 +20,6 @@
   }
 }
 
-// .main-nav__toggle--catalog {
-//   @media (max-width: $mobile-width-only) {
-//     right: 20px;
-//   }
-// }
-
 .main-nav--closed .main-nav__toggle::before {
   content: "";
   position: absolute;
@@ -53,6 +47,23 @@
 .main-nav__opened .main-nav__list {
   top: 0;
   right: 0;
+}
+
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
+
+.main-nav--nojs .main-nav__wrapper {
+  position: static;
+  min-height: 0;
+}
+
+.main-nav--nojs .main-nav__list {
+  display: block;
+}
+
+.main-nav--nojs .main-nav__item {
+  display: block;
 }
 
 .main-nav--opened .main-nav__toggle {
