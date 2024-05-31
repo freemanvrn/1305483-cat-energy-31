@@ -8,14 +8,19 @@
   border: none;
   display: block;
   width: 100%;
+  background-image: url("../../images/map-mobile@2x.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
     height: 400px;
+    background-image: url("../../images/map-tablet@2x.png");
   }
 
   @media (min-width: $desktop-width) {
     position: relative;
     z-index: -1;
+    background-image: url("../../images/map-desktop@2x.png");
   }
 }
 
