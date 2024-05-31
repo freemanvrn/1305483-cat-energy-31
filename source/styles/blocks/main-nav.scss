@@ -139,7 +139,7 @@
 .main-nav__item--current {
   @media (min-width: $tablet-width) {
     display: block;
-    padding-bottom: 7px;
+    padding-bottom: 8px;
     border-bottom: 2px solid $bg-color-green;
   }
 }
